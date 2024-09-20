@@ -1,0 +1,8 @@
+- hosts: server
+  vars:
+    devel: true
+  roles:
+    # - UniInc.Netplan-Ethernet-activate
+    - ansible-role-MAAS-install
+    - ansible-role-MAAS-init
+    - ansible-role-MAAS-config
